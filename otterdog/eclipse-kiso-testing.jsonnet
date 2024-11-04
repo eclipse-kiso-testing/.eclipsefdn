@@ -52,9 +52,6 @@ orgs.newOrg('eclipse-kiso-testing') {
       gh_pages_source_branch: "master",
       gh_pages_source_path: "/",
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "read",
-      },
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
@@ -65,9 +62,6 @@ orgs.newOrg('eclipse-kiso-testing') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "read",
-      },
     },
     orgs.newRepo('kiso-testing-vscode') {
       allow_merge_commit: true,
@@ -81,9 +75,6 @@ orgs.newOrg('eclipse-kiso-testing') {
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "read",
-      },
     },
   ],
 }
