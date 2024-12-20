@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-kiso-testing') {
+orgs.newOrg('iot.kiso-testing', 'eclipse-kiso-testing') {
   settings+: {
     description: "",
     name: "Eclipse Kiso-testing project",
